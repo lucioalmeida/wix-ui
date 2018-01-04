@@ -1,0 +1,13 @@
+export declare const CLICK = "click";
+export declare type CLICK_TYPE = 'click';
+export declare const HOVER = "hover";
+export declare type HOVER_TYPE = 'hover';
+export declare const SINGLE_SELECT = "singleSelect";
+export declare type SINGLE_SELECT_TYPE = 'singleSelect';
+export declare const MULTI_SELECT = "multiSelect";
+export declare type MULTI_SELECT_TYPE = 'multiSelect';
+export declare const OPTION = "option";
+export declare type OPTION_TYPE = 'option';
+export declare const SEPARATOR = "separator";
+export declare type SEPARATOR_TYPE = 'separator';
+export declare const NOT_HOVERED_INDEX = -1;

@@ -1,0 +1,245 @@
+.ToggleSwitch2321882239--root {
+  -st-states: checked, disabled;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  outline: none
+}
+
+.ToggleSwitch2321882239--root > input[type=checkbox] {
+  display: none;
+}
+
+.ToggleSwitch2321882239--root .ToggleSwitch2321882239--outerLabel {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.ToggleSwitch2321882239--root .ToggleSwitch2321882239--innerLabel {
+  display: flex;
+
+  position: absolute;
+  left: 1px;
+  z-index: 1;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  box-shadow: 1.5px 1.5px 1px rgba(0,0,0,0.2);
+
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.ToggleSwitch2321882239--root .ToggleSwitch2321882239--toggleIcon {}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root {
+  -st-extends: ToggleSwitch;
+  -st-states: error, success, x-small, small;
+  width: initial;
+  height: initial;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root .ToggleSwitch2321882239--outerLabel, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root .ToggleSwitch2321882239--innerLabel {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root .ToggleSwitch2321882239--outerLabel {
+  width: 45px;
+  height: 24px;
+  background-color: #daeffe;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root .ToggleSwitch2321882239--innerLabel {
+  width: 21px;
+  height: 22px;
+  background-color: white;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root .ToggleSwitch2321882239--toggleIcon {
+  display: block;
+  width: 8px;
+  height: 6px;
+  transition: all 0.3s cubic-bezier(1,0,1,0);
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root .ToggleSwitch2321882239--toggleIcon path {
+  fill: #daeffe;
+}
+
+
+/* checked state */
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-checked] .ToggleSwitch2321882239--outerLabel {
+  background-color: #3899ec;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-checked] .ToggleSwitch2321882239--innerLabel {
+  left: 23px;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-checked]::toggle {
+  transition: all 0.3s cubic-bezier(0,1,0,1);
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-checked] .ToggleSwitch2321882239--toggleIcon path {
+  fill: #3899ec;
+}
+
+/* disabled state */
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled] .ToggleSwitch2321882239--outerLabel, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled]:hover .ToggleSwitch2321882239--outerLabel, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch2321882239-checked] .ToggleSwitch2321882239--outerLabel, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch2321882239-checked]:hover .ToggleSwitch2321882239--outerLabel {
+  background-color: #cbd3dc;
+  cursor: default;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled] .ToggleSwitch2321882239--innerLabel, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled]:hover .ToggleSwitch2321882239--innerLabel, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch2321882239-checked] .ToggleSwitch2321882239--innerLabel, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch2321882239-checked]:hover .ToggleSwitch2321882239--innerLabel {
+  cursor: default;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled] .ToggleSwitch2321882239--toggleIcon path, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled]:hover .ToggleSwitch2321882239--toggleIcon path {
+  fill: #dfe5eb;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch2321882239-checked] .ToggleSwitch2321882239--toggleIcon path, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch2321882239-checked]:hover .ToggleSwitch2321882239--toggleIcon path {
+  fill: #dfe5eb;
+}
+
+/* hover state */
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root:hover .ToggleSwitch2321882239--outerLabel, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-checked]:hover .ToggleSwitch2321882239--outerLabel {
+  background-color: #4eb7f5;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root:hover .ToggleSwitch2321882239--toggleIcon path, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-checked]:hover .ToggleSwitch2321882239--toggleIcon path {
+  fill: #4eb7f5;
+}
+
+/* focus state */
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root:focus {
+  outline: none;
+}
+
+
+/* ====================== custom size states ====================== */
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch3308543318-x-small] .ToggleSwitch2321882239--outerLabel {
+  width: 28px;
+  height: 15px;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch3308543318-small] .ToggleSwitch2321882239--outerLabel {
+  width: 36px;
+  height: 20px;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch3308543318-x-small] .ToggleSwitch2321882239--innerLabel {
+  width: 13px;
+  height: 13px;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch3308543318-small] .ToggleSwitch2321882239--innerLabel {
+  width: 18px;
+  height: 18px;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch3308543318-x-small] .ToggleSwitch2321882239--toggleIcon {
+  display: none;
+}
+
+/* & checked */
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-checked][data-toggleswitch3308543318-small] .ToggleSwitch2321882239--innerLabel {
+  left: 17px;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-checked][data-toggleswitch3308543318-x-small] .ToggleSwitch2321882239--innerLabel {
+  left: 13px;
+}
+
+
+/* ====================== custom skin states ====================== */
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch3308543318-error] .ToggleSwitch2321882239--outerLabel {
+  background-color: #ffd7d7;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch3308543318-success] .ToggleSwitch2321882239--outerLabel {
+  background-color: #c9eebc;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch3308543318-error] .ToggleSwitch2321882239--toggleIcon path {
+  fill: #ffd7d7;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch3308543318-success] .ToggleSwitch2321882239--toggleIcon path {
+  fill: #c9eebc;
+}
+
+/* & checked */
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-checked][data-toggleswitch3308543318-success] .ToggleSwitch2321882239--outerLabel {
+  background-color: #60bc57;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-checked][data-toggleswitch3308543318-error] .ToggleSwitch2321882239--outerLabel {
+  background-color: #ee5951;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-checked][data-toggleswitch3308543318-success] .ToggleSwitch2321882239--toggleIcon path {
+  fill: #60bc57;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-checked][data-toggleswitch3308543318-error] .ToggleSwitch2321882239--toggleIcon path {
+  fill: #ee5951;
+}
+
+/* & hover */
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root:hover[data-toggleswitch3308543318-success] .ToggleSwitch2321882239--outerLabel, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-checked]:hover[data-toggleswitch3308543318-success] .ToggleSwitch2321882239--outerLabel {
+  background-color: #80c979;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root:hover[data-toggleswitch3308543318-error] .ToggleSwitch2321882239--outerLabel, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-checked]:hover[data-toggleswitch3308543318-error] .ToggleSwitch2321882239--outerLabel {
+  background-color: #ff6666;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root:hover[data-toggleswitch3308543318-success] .ToggleSwitch2321882239--toggleIcon path, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-checked]:hover[data-toggleswitch3308543318-success] .ToggleSwitch2321882239--toggleIcon path {
+  fill: #80c979;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root:hover[data-toggleswitch3308543318-error] .ToggleSwitch2321882239--toggleIcon path, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-checked]:hover[data-toggleswitch3308543318-error] .ToggleSwitch2321882239--toggleIcon path {
+  fill: #ff6666;
+}
+
+/* & disabled */
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch3308543318-success] .ToggleSwitch2321882239--outerLabel, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch3308543318-success]:hover .ToggleSwitch2321882239--outerLabel, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch3308543318-success][data-toggleswitch2321882239-checked] .ToggleSwitch2321882239--outerLabel, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch3308543318-success][data-toggleswitch2321882239-checked]:hover .ToggleSwitch2321882239--outerLabel {
+  background-color: #cbd3dc;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch3308543318-error] .ToggleSwitch2321882239--outerLabel, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch3308543318-error]:hover .ToggleSwitch2321882239--outerLabel, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch3308543318-error][data-toggleswitch2321882239-checked] .ToggleSwitch2321882239--outerLabel, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch3308543318-success][data-toggleswitch2321882239-checked]:hover .ToggleSwitch2321882239--outerLabel {
+  background-color: #cbd3dc;
+}
+
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch3308543318-success] .ToggleSwitch2321882239--toggleIcon path, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch3308543318-success]:hover .ToggleSwitch2321882239--toggleIcon path {
+  fill: #dfe5eb;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch3308543318-error] .ToggleSwitch2321882239--toggleIcon path, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch3308543318-error]:hover .ToggleSwitch2321882239--toggleIcon path {
+  fill: #dfe5eb;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch3308543318-success][data-toggleswitch2321882239-checked] .ToggleSwitch2321882239--toggleIcon path, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch3308543318-success][data-toggleswitch2321882239-checked]:hover .ToggleSwitch2321882239--toggleIcon path {
+  fill: #dfe5eb;
+}
+
+.ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch3308543318-error][data-toggleswitch2321882239-checked] .ToggleSwitch2321882239--toggleIcon path, .ToggleSwitch3308543318--root.ToggleSwitch2321882239--root[data-toggleswitch2321882239-disabled][data-toggleswitch3308543318-error][data-toggleswitch2321882239-checked]:hover .ToggleSwitch2321882239--toggleIcon path {
+  fill: #dfe5eb;
+}
